@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article id="home">
+    <header class="section-header" id="home-header">
+      <h1>{{ site.Title }}</h1>
+      <div id="description"><p>This is my website!</p></div>
+    </header>
+    <div>
+      <header class="section-header"><h2>Latest Blog Posts</h2></header>
+      <ul class="post-list">
+        {{ range first 10 (where site.RegularPages "Section" "blog") }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      </ul>
+    </div>
+  </article>
+{{ end }}

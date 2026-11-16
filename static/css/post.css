@@ -1,0 +1,50 @@
+#post header {
+  border-bottom: var(--separator);
+  padding-bottom: 1.25rem;
+}
+
+#post-content p,
+#post-content ol,
+#post-content ul,
+#post-content hr,
+#post-content pre,
+#post-content div,
+#post-content blockquote,
+#post-content table {
+  margin-bottom: 1.25rem;
+}
+
+#post-content img,
+#post-content .chroma {
+  border-radius: 0.5rem;
+}
+
+#post-content a {
+  color: var(--color-primary);
+}
+
+#post-content .chroma {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+#post-content blockquote {
+  padding: 0 1em;
+  border-left: 3px solid var(--color-primary);
+}
+
+#post-content table {
+  display: block;
+  overflow-x: auto;
+}
+
+#post-content th,
+#post-content td {
+  padding: 0.5rem 0.75rem;
+  text-align: start;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}

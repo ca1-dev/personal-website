@@ -1,0 +1,13 @@
+<li>
+  <a href="{{ .RelPermalink }}">
+    <div class="container">
+      <header>
+        <h3>{{ .Title }}</h3>
+        <p class="date tnum">
+          <small>{{ .Date.Format "02 Jan 2006" }}</small>
+        </p>
+      </header>
+      <p>{{ .Summary }}</p>
+    </div>
+  </a>
+</li>

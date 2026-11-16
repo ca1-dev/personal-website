@@ -1,0 +1,92 @@
+@import "./footer.css";
+@import "./header.css";
+@import "./highlight.css";
+@import "./index.css";
+@import "./list.css";
+@import "./post.css";
+@import "./reset.css";
+
+* {
+  transition:
+    color 200ms ease,
+    text-decoration-color 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    outline-color 200ms ease,
+    border-radius 0.3s cubic-bezier(0.2, 0, 0, 1),
+    background-color 0.3s cubic-bezier(0.2, 0, 0, 1);
+}
+
+:root {
+  --color-background: #f2eff9;
+  --color-foreground: #302c39;
+  --color-header-background: #f2eff9b0;
+  --color-background-alt: #ada9b5;
+
+  --color-primary: #bd87ff;
+
+  --separator: 1px solid var(--color-background-alt);
+}
+
+:root[data-theme="dark"] {
+  --color-background: #0f0c15;
+  --color-foreground: #d3cae3;
+  --color-header-background: #0f0c15e0;
+  --color-background-alt: #231c2e;
+}
+
+html {
+  overflow-y: scroll;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.section-header {
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+code {
+  font-family: "IBM Plex Mono";
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.page-centered {
+  width: 100%;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 50ch) {
+  #main {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+/* push footer to bottom of screen */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

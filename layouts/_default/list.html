@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <header class="section-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  <ul class="post-list">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </ul>
+{{ end }}

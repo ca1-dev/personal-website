@@ -1,0 +1,6 @@
+locale = 'en'
+title = 'ca1.dev'
+pluralizeListTitles = false
+
+[markup.highlight]
+  noClasses = false
